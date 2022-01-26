@@ -20,6 +20,7 @@
 #include <curses.h>
 #include <cstdarg>
 #include <cstdio>
+#include <cstring>
 #include <string>
 #include <vector>
 #include <ctime>
