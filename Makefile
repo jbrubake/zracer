@@ -1,3 +1,5 @@
+PREFIX = /usr/local
+BINDIR = games
 zracer: zracer.cpp
 	g++ -Os -Wall -lncurses -o zracer zracer.cpp
 	
@@ -8,4 +10,4 @@ clean:
 	rm zracer
 
 install:
-	install -g games -o root zracer /usr/games/bin/
+	install -g games -o root zracer $(PREFIX)/$(BINDIR)
